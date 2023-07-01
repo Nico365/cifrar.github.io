@@ -1,0 +1,77 @@
+.aside{
+    background-color: #1A1A1A;
+    height: 100vh;
+    color: white;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15rem;
+    word-break: break-all;
+    line-height: .75;
+}
+
+.subtitle {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8rem;
+}
+
+.info {
+    font-family: 'Roboto Mono', monospace;
+    width: 80%;
+    text-align:center;
+    margin-left: 9%;
+    word-break: break-all;
+
+}
+.text-area {
+   height: 20vh;
+   border: .5px solid lightslategray;
+}
+
+.fixed-width,
+input#userOffset.user-offset {
+    width: 50%;
+    margin-top: 1.5rem;
+}
+
+.cifrar-btn {
+    background-color: #f2f2f2;
+    color: #1A1A1A;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    margin-right: 3%;
+}
+
+.descifrar-btn {
+    background-color: #1A1A1A;
+    color: #f2f2f2;
+    border-radius: 15px;
+    letter-spacing: 2px;
+}
+
+.result {
+    border: .5px solid lightslategray;
+    margin-left: 25%;
+    height: 20vh;
+}
+
+.content {
+    margin-top: 10%;
+}
+
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text);
+    color: #a9a9a9;
+    font-size: 1rem;
+}
+
+::placeholder {
+    color: #a9a9a9;
+    font-size: 1rem;
+    text-align:center;
+}
+
+.btn:hover, .btn::after {
+    background-color: gray;
+  }

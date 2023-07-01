@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <title>Cipher</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="row">
+            <div class="aside center col m4 l4 hide-on-small-only	">
+                <h1 class="hide-on-med-only">CIPHER</h1>
+                <p class="subtitle">Caesar Cipher Encoding</p>
+                <p class="info">
+                    Escriba un mensaje para codificarlo, luego puede elegir un número secreto y enviar su mensaje cifrado de forma segura.
+                    Para descifrar, pegue el mensaje cifrado e ingrese el número secreto.
+                    El resultado siempre aparecerá en la parte inferior de los dos botones.
+                </p>
+            </div>
+            <div class="content center col s8 m8 l8">
+                <textarea class="text-area fixed-width" id="textArea" placeholder="Message to be encoded"></textarea>
+                <input type="number" class="user-offset" id="userOffset" placeholder="Offset">
+                <p id="userText"></p>
+                <button type="button" class="cifrar-btn btn waves-effect waves-light" id="submitButton">cifrar</button>
+                <button type="button" class="descifrar-btn btn waves-effect waves-light" id="decipherButton">descifrar</button>
+                <div contentEditable=true data-text="Encoded Message" class="result fixed-width" id="resultado"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
